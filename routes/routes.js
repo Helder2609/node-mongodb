@@ -14,4 +14,16 @@ router.get('/produtos/:id', (req, res) => ProdutoController.get(req, res))
 router.put('/produtos/:id', (req, res) => ProdutoController.update(req, res))
 router.delete('/produtos/:id', (req, res) => ProdutoController.delete(req, res))
 
+router.get('/comandas', (req, res) => ProdutoController.getAll(req, res))
+router.get('/comandas', (req, res) => ProdutoController.getAll(req, res))
+router.post('/comandas', (req, res) => ProdutoController.create(req, res))
+router.post('/comandas', (req, res) => ProdutoController.create(req, res))
+router.get('/comandas/:id', (req, res) => ProdutoController.get(req, res))
+
+router.get('/cliente/:id', (req, res) => ProdutoController.get(req, res))
+router.put('/cliente/:id', (req, res) => ProdutoController.update(req, res))
+router.put('/cliente/:id', (req, res) => ProdutoController.update(req, res))
+router.delete('/cliente/:id', (req, res) => ProdutoController.delete(req, res))
+router.delete('/cliente/:id', (req, res) => ProdutoController.delete(req, res))
+
 module.exports = router
